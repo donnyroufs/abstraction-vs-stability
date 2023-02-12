@@ -8,7 +8,9 @@ import { CaregiverEntity } from './caregiver.entity';
 @Controller('request-meet')
 export class RequestMeetController {
   @Post()
-  public async handle(@Body() data: RequestMeetRequest): Promise<any> {
+  public async handle(
+    @Body() data: RequestMeetRequest,
+  ): Promise<RequestMeetResponse> {
     const request = new MeetRequestEntity();
     const caregiver = await CaregiverEntity.findOneBy({
       id: data.caregiverId,
