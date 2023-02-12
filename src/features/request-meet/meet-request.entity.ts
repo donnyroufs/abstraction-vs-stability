@@ -41,4 +41,18 @@ export class MeetRequestEntity extends BaseEntity {
 
   @UpdateDateColumn()
   public updatedAt: Date;
+
+  public accept(): void {
+    this.setStatus(RequestStatus.Accepted);
+  }
+
+  public decline(): void {
+    this.setStatus(RequestStatus.Declined);
+  }
+
+  private setStatus(status: RequestStatus): void {
+    if (this.status !== RequestStatus.Pending) return;
+
+    this.status = status;
+  }
 }

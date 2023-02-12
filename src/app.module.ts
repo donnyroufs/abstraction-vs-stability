@@ -4,8 +4,9 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { MeetRequestEntity } from './features/request-meet/meet-request.entity';
 import { RequestMeetModule } from './features/request-meet/request-meet.module';
 import { CaregiverEntity } from './features/request-meet/caregiver.entity';
+import { ReplyToMeetRequestModule } from './features/reply-to-meet-request/reply-to-meet-request.module';
 
-const features = [RequestMeetModule];
+const features = [RequestMeetModule, ReplyToMeetRequestModule];
 
 @Module({
   imports: [
