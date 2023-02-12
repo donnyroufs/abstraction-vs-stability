@@ -5,7 +5,7 @@ import {
   OneToMany,
   PrimaryGeneratedColumn,
 } from 'typeorm';
-import { MeetRequestEntity } from './meet-request.entity';
+import { MeetRequestEntity } from '../../core/meet-request.entity';
 
 export enum CaregiverStatus {
   Available,

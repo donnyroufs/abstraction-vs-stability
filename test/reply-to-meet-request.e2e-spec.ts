@@ -11,7 +11,7 @@ import { ReplyRequest } from '../src/features/reply-to-meet-request/reply.reques
 import {
   MeetRequestEntity,
   RequestStatus,
-} from '../src/features/request-meet/meet-request.entity';
+} from '../src/core/meet-request.entity';
 
 describe('ReplyToMeetRequestController', () => {
   let app: INestApplication;

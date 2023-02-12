@@ -7,7 +7,7 @@ import {
   PrimaryGeneratedColumn,
   UpdateDateColumn,
 } from 'typeorm';
-import { CaregiverEntity } from './caregiver.entity';
+import { CaregiverEntity } from '../features/request-meet/caregiver.entity';
 
 export enum RequestStatus {
   Pending = 0,

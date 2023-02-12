@@ -1,6 +1,9 @@
 import { BadRequestException, Body, Controller, Post } from '@nestjs/common';
 
-import { MeetRequestEntity, RequestStatus } from './meet-request.entity';
+import {
+  MeetRequestEntity,
+  RequestStatus,
+} from '../../core/meet-request.entity';
 import { RequestMeetRequest } from './request-meet.request';
 import { RequestMeetResponse } from './request-meet.response';
 import { CaregiverEntity } from './caregiver.entity';

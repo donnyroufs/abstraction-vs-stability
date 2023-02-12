@@ -7,7 +7,7 @@ import {
   ParseIntPipe,
   Patch,
 } from '@nestjs/common';
-import { MeetRequestEntity } from '../request-meet/meet-request.entity';
+import { MeetRequestEntity } from '../../core/meet-request.entity';
 import { ReplyRequest } from './reply.request';
 
 @Controller('request-meet/:id/reply')
