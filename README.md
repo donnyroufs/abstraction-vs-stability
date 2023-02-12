@@ -1,3 +1,9 @@
+## Features
+
+- As a client I want to request a meeting with a caregiver
+- As a caregiver I want to vote whether I want to meet with the client
+
+## Test Results
 ```
  PASS  test/request-meet.e2e-spec.ts
   RequestMeetController
